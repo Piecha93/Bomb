@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TextureAtlas width="64" height="576">
+
+	<sprite n="center" x="0" y="0"  w="32" h="32"/>
+	<sprite n="horizontally" x="0" y="32" w="32" h="32"/>
+	<sprite n="upright" x="0" y="64" w="32" h="32"/>
+	<sprite n="rightend" x="0" y="96" w="32" h="32"/>
+	<sprite n="leftend" x="0" y="128" w="32" h="32"/>
+	<sprite n="downend" x="0" y="160" w="32" h="32"/>
+	<sprite n="upend" x="0" y="192" w="32" h="32"/>
+
+	
+
+</TextureAtlas>

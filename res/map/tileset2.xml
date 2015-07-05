@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TextureAtlas width="256" height="256">
+
+	<sprite n="grass" x="0" y="0"  w="32" h="32"/>
+	<sprite n="bordergrass" x="32" y="0" w="32" h="32"/>
+	<sprite n="hole" x="64" y="0" w="32" h="32"/>
+	<sprite n="borderhole" x="96" y="0" w="32" h="32"/>
+	<sprite n="sand" x="128" y="0" w="32" h="32"/>
+	<sprite n="bordersand" x="160" y="0" w="32" h="32"/>
+	<sprite n="dirt" x="192" y="0" w="32" h="32"/>
+	<sprite n="borderdirt" x="224" y="0" w="32" h="32"/>
+	
+	<sprite n="topleftgrass" x="0" y="32" w="32" h="32"/>
+	<sprite n="toprightgrass" x="32" y="32" w="32" h="32"/>
+	<sprite n="toplefthole" x="64" y="32" w="32" h="32"/>
+	<sprite n="toprighthole" x="96" y="32" w="32" h="32"/>
+	<sprite n="topleftsand" x="128" y="32" w="32" h="32"/>
+	<sprite n="toprightsand" x="160" y="32" w="32" h="32"/>
+	<sprite n="topleftdirt" x="192" y="32" w="32" h="32"/>
+	<sprite n="toprightdirt" x="224" y="32" w="32" h="32"/>
+	
+	<sprite n="bottomleftgrass" x="0" y="64" w="32" h="32"/>
+	<sprite n="bottomrightgrass" x="32" y="64" w="32" h="32"/>
+	<sprite n="bottomlefthole" x="64" y="64" w="32" h="32"/>
+	<sprite n="bottomrighthole" x="96" y="64" w="32" h="32"/>
+	<sprite n="bottomleftsand" x="128" y="64" w="32" h="32"/>
+	<sprite n="bottomrightsand" x="160" y="64" w="32" h="32"/>
+	<sprite n="bottomleftdirt" x="192" y="64" w="32" h="32"/>
+	<sprite n="bottomrightdirt" x="224" y="64" w="32" h="32"/>
+	
+	<sprite n="burnedgrass" x="0" y="96" w="32" h="32"/>
+	<sprite n="burnedgrass2" x="32" y="96" w="32" h="32"/>
+	<sprite n="bridgeleft" x="64" y="96" w="32" h="32"/>
+	<sprite n="bridgeright" x="96" y="96" w="32" h="32"/>
+	<sprite n="floor1" x="128" y="96" w="32" h="32"/>
+	<sprite n="floor2" x="160" y="96" w="32" h="32"/>
+	<sprite n="floor3" x="192" y="96" w="32" h="32"/>
+	<sprite n="floor4" x="224" y="96" w="32" h="32"/>
+	
+	<sprite n="stone1" x="0" y="128" w="32" h="32"/>
+	<sprite n="stone2" x="32" y="128" w="32" h="32"/>
+	<sprite n="stone3" x="64" y="128" w="32" h="32"/>
+	<sprite n="stone4" x="96" y="128" w="32" h="32"/>
+	<sprite n="chestsilver" x="128" y="128" w="32" h="32"/>
+	<sprite n="chestgold" x="160" y="128" w="32" h="32"/>
+	<sprite n="chestdaimond" x="192" y="128" w="32" h="32"/>
+	<sprite n="chestmetal" x="224" y="128" w="32" h="32"/>
+	
+	<sprite n="brick1" x="0" y="160" w="32" h="32"/>
+	<sprite n="edgebrick1" x="32" y="160" w="32" h="32"/>
+	<sprite n="brick2" x="64" y="160" w="32" h="32"/>
+	<sprite n="edgebrick2" x="96" y="160" w="32" h="32"/>
+	<sprite n="brick3" x="128" y="160" w="32" h="32"/>
+	<sprite n="edgebrick3" x="160" y="160" w="32" h="32"/>
+	<sprite n="brick4" x="192" y="160" w="32" h="32"/>
+	<sprite n="edgebrick4" x="224" y="160" w="32" h="32"/>
+</TextureAtlas>

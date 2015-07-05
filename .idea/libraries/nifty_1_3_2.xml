@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="nifty-1.3.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jars/nifty-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars/nifty-default-controls-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars/nifty-lwjgl-renderer-1.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

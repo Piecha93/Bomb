@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TextureAtlas width="256" height="768">
+	<sprite n="smoke1" x="0" y="0"  w="32" h="32"/>
+	<sprite n="smoke2" x="32" y="0" w="32" h="32"/>
+	<sprite n="smoke3" x="64" y="0" w="32" h="32"/>
+	<sprite n="smoke4" x="96" y="0" w="32" h="32"/>
+</TextureAtlas>

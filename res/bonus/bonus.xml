@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TextureAtlas width="64" height="576">
+
+	<sprite n="bomb" x="0" y="0"  w="32" h="32"/>
+	<sprite n="power" x="0" y="32" w="32" h="32"/>
+	<sprite n="speed" x="0" y="64" w="32" h="32"/>
+
+	
+
+</TextureAtlas>

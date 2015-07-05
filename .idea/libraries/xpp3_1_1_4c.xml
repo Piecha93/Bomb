@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="xpp3-1.1.4c">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jars/xpp3-1.1.4c.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jars/jglfont-core-1.4-20140706.131857-7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/jars/eventbus-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

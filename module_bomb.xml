@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_bomb" default="compile.module.bomb">
+  <dirname property="module.bomb.basedir" file="${ant.file.module_bomb}"/>
+  
+  <property name="module.jdk.home.bomb" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.bomb" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.bomb" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.bomb" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="bomb.output.dir" value="${module.bomb.basedir}/out/production/Bomb"/>
+  <property name="bomb.testoutput.dir" value="${module.bomb.basedir}/out/test/Bomb"/>
+  
+  <path id="bomb.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="bomb.module.production.classpath">
+    <path refid="${module.jdk.classpath.bomb}"/>
+    <path refid="library.lwjgl.classpath"/>
+    <path refid="library.lwjgl_util.classpath"/>
+    <path refid="library.slick-util.classpath"/>
+    <path refid="library.jdom.classpath"/>
+    <path refid="library.pngdecoder.classpath"/>
+  </path>
+  
+  <path id="bomb.runtime.production.module.classpath">
+    <pathelement location="${bomb.output.dir}"/>
+    <path refid="library.lwjgl.classpath"/>
+    <path refid="library.lwjgl_util.classpath"/>
+    <path refid="library.slick-util.classpath"/>
+    <path refid="library.jdom.classpath"/>
+    <path refid="library.pngdecoder.classpath"/>
+  </path>
+  
+  <path id="bomb.module.classpath">
+    <path refid="${module.jdk.classpath.bomb}"/>
+    <pathelement location="${bomb.output.dir}"/>
+    <path refid="library.lwjgl.classpath"/>
+    <path refid="library.lwjgl_util.classpath"/>
+    <path refid="library.slick-util.classpath"/>
+    <path refid="library.jdom.classpath"/>
+    <path refid="library.pngdecoder.classpath"/>
+  </path>
+  
+  <path id="bomb.runtime.module.classpath">
+    <pathelement location="${bomb.testoutput.dir}"/>
+    <pathelement location="${bomb.output.dir}"/>
+    <path refid="library.lwjgl.classpath"/>
+    <path refid="library.lwjgl_util.classpath"/>
+    <path refid="library.slick-util.classpath"/>
+    <path refid="library.jdom.classpath"/>
+    <path refid="library.pngdecoder.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.bomb">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.bomb">
+    <patternset refid="excluded.from.module.bomb"/>
+  </patternset>
+  
+  <path id="bomb.module.sourcepath">
+    <dirset dir="${module.bomb.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.bomb" depends="compile.module.bomb.production,compile.module.bomb.tests" description="Compile module Bomb"/>
+  
+  <target name="compile.module.bomb.production" depends="register.custom.compilers" description="Compile module Bomb; production classes">
+    <mkdir dir="${bomb.output.dir}"/>
+    <javac2 destdir="${bomb.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.bomb}/javac">
+      <compilerarg line="${compiler.args.bomb}"/>
+      <bootclasspath refid="bomb.module.bootclasspath"/>
+      <classpath refid="bomb.module.production.classpath"/>
+      <src refid="bomb.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.bomb"/>
+    </javac2>
+    
+    <copy todir="${bomb.output.dir}">
+      <fileset dir="${module.bomb.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.bomb.tests" depends="register.custom.compilers,compile.module.bomb.production" description="compile module Bomb; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.bomb" description="cleanup module">
+    <delete dir="${bomb.output.dir}"/>
+    <delete dir="${bomb.testoutput.dir}"/>
+  </target>
+</project>

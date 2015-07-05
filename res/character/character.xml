@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TextureAtlas width="256" height="768">
+	<sprite n="back1" x="0" y="0"  w="42" h="42"/>
+	<sprite n="back2" x="42" y="0" w="42" h="42"/>
+	<sprite n="back3" x="84" y="0" w="42" h="42"/>
+	<sprite n="back4" x="126" y="0" w="42" h="42"/>
+
+	
+	<sprite n="right1" x="0" y="42" w="42" h="42"/>
+	<sprite n="right2" x="42" y="42" w="42" h="42"/>
+	<sprite n="right3" x="84" y="42" w="42" h="42"/>
+	<sprite n="right4" x="126" y="42" w="42" h="42"/>
+	
+	<sprite n="front1" x="0" y="84" w="42" h="42"/>
+	<sprite n="front2" x="42" y="84" w="42" h="42"/>
+	<sprite n="front3" x="84" y="84" w="42" h="42"/>
+	<sprite n="front4" x="126" y="84" w="42" h="42"/>
+	
+	<sprite n="left1" x="0" y="126" w="42" h="42"/>
+	<sprite n="left2" x="42" y="126" w="42" h="42"/>
+	<sprite n="left3" x="84" y="126" w="42" h="42"/>
+	<sprite n="left4" x="126" y="126" w="42" h="42"/>
+</TextureAtlas>
